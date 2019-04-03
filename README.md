@@ -2,6 +2,7 @@
 This a dockerized API to expose a scikit model with fastAPI.
 
 Based on https://github.com/tiangolo/uvicorn-gunicorn-docker
+
 #Structure 
 ###*API endpoints are in main but you may add your utils in 'app/app' folder*
 app/app/main.py 
