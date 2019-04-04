@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from sklearn.externals import joblib
 from pydantic import  BaseModel
 
+from sklearn.model_selection._search import GridSearchCV
 
 # define model for post request
 class ModelParams(BaseModel):
@@ -12,7 +13,11 @@ class ModelParams(BaseModel):
 
 app = FastAPI()
 
-model = joblib.load("model/iris_model.pkl")
+model = GridSearchCV()
+
+@app.on_event("startup")
+async def startup_event():
+    model = joblib.load("model/iris_model.pkl")
 
 def get_prediction(sepal_length, sepal_width, petal_length, petal_width):
     x = [[sepal_length, sepal_width, petal_length, petal_width]]
@@ -22,6 +27,5 @@ def get_prediction(sepal_length, sepal_width, petal_length, petal_width):
 
 @app.post("/predict-post/")
 def post_predict(params: ModelParams):
-    param_dict = params.dict()
-    pred = get_prediction(**param_dict)
+    pred = get_prediction(**params.dict())
     return pred
