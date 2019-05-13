@@ -24,11 +24,11 @@ Train & pickle (with joblib) a scikit model and store it in app/model folder.
 Build & run docker image (see below)
 
 ## Build & Run :
-#### *Build image :*
+### *Build image :*
 * `cd generic_api`
 * `docker build -t generic_api .`
 
-## *Run image :*
+### *Run image :*
 #### *remove -d to keep CLI attached*
 `docker run -d -p 80:80 generic_api`
 
