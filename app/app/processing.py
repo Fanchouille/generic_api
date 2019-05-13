@@ -1,15 +1,28 @@
 import numpy as np
 
-# Here add custom code to add some preproc on data
 class Processor:
     def __init__(self):
         return
 
     def apply_preprocessing(self, data):
-        return np.array([data[key] for key in data.fields.keys()]).T
+        """
 
-    def get_prediction(model, preprocessor, input_params):
-        x = preprocessor.apply_preprocessing(input_params)
-        y = model.predict(x)
+        :param data: raw data from API with ModelInputs schema (see schemas.py)
+        :return: preprocessed data
+        """
+        # Just get list of feature as a numpy matrix
+        # Add custom code to add preproc on data
+        return np.array([data.dict()[key] for key in data.fields.keys()]).T
+
+    def get_prediction(self, model, data):
+        """
+
+        :param model: a trained scikit model
+        :param data: raw data from API with ModelInputs schema (see schemas.py)
+        :return: a dict with results : a list of prediction / probabilities
+        """
+        x = self.apply_preprocessing(data)
+        y = model.predict(x).tolist()
         probs = model.predict_proba(x).tolist()
-        return [{'prediction': int(pred), 'probability': probs[enum]} for enum, pred in enumerate(y)]
+        # Be sure the output of get_prediction matches ModelOutputsList (see schemas.py)
+        return {'results': [{'prediction': int(pred), 'probabilities': probs[enum]} for enum, pred in enumerate(y)]}
