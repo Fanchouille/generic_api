@@ -1,41 +1,36 @@
 # Generic API
+This a dockerized API to expose a scikit model with fastAPI (dummy model with Iris dataset).
+Based on [this docker image](https://github.com/tiangolo/uvicorn-gunicorn-docker)
 
-This a dockerized API to expose a scikit model with fastAPI.
+## Structure 
+#### *API endpoints*
+>/app/app/main.py 
+#### *Schemas of inputs and outputs*
+>/app/app/schemas.py
+#### *Custom preprocessing and get_prediction function*
+>/app/app/processing.py
+#### *Pickled scikit model*
+>/app/model/model.pkl
 
-Based on https://github.com/tiangolo/uvicorn-gunicorn-docker
+## What do I need to do ?
+Clone repo
 
-# Structure 
+Change inputs format in schemas.py (& outputs if needed)
 
-### *API endpoints are in main.py*
+Change processing code if needed.
 
-/app/app/main.py 
+Train & pickle (with joblib) a scikit model and store it in app/model folder.
 
-### *Schemas of inputs and outputs are in schemas.py*
+Build & run docker image (see below)
 
-/app/app/schemas.py
-
-### *Custom preprocessing and prediction func can be found in processing.py*
-
-/app/app/processing.py
-
-### *Pickled model is in 'app/model' folder*
-
-/app/model/your_model.pkl
-
-# Run this :
-
-## *Build image :*
-
-`cd generic_api`
-
-`docker build -t generic_api .`
+## Build & Run :
+#### *Build image :*
+* `cd generic_api`
+* `docker build -t generic_api .`
 
 ## *Run image :*
-
-### *remove -d to keep CLI attached*
-
+#### *remove -d to keep CLI attached*
 `docker run -d -p 80:80 generic_api`
 
-### *Dev mode : run with live reload | -v $(pwd) to use local folder as volume*
-
+#### *Dev mode (1 worker) : run with live reload with local folder as volume*
 `docker run -d -p 80:80 -v $(pwd)/app:/app generic_api /start-reload.sh`

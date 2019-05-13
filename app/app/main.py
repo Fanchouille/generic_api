@@ -6,8 +6,8 @@ from .processing import Processor
 # Instantiate app
 app = FastAPI()
 
-# Load model - MODIFY NAME OF MODEL
-model = joblib.load("model/iris_model.pkl")
+# Load model - MODIFY NAME OF MODEL if needed
+model = joblib.load("model/model.pkl")
 
 # Instantiate Preprocessor - MODIFY PROCESSOR CLASS (see processing.py) AND schemas of inputs/outputs (see schemas.py)
 processor = Processor()
