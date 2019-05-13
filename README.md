@@ -37,4 +37,4 @@ Build & run docker image (see below)
 
 
 ## Access :
-Your API documentation is available at [127.0.0.1/docs](127.0.0.1/docs)
+Your API documentation is available at [127.0.0.1/docs](http://127.0.0.1/docs)
