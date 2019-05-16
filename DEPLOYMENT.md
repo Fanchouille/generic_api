@@ -27,7 +27,6 @@ This tutorial is for simple deployment on Azure.
 
     example : `docker push fanchouille/generic_api`
 
-
 ## Azure related steps
 
 1. Connect to [Azure](portal.azure.com)
