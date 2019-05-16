@@ -36,10 +36,8 @@ Build & run docker image (see below)
 #### *Dev mode (1 worker) : run with live reload with local folder as volume*
 `docker run -d -p 80:80 -v $(pwd)/app:/app generic_api /start-reload.sh`
 
-
 ## Access :
 Your API documentation is available at [http://127.0.0.1/docs](http://127.0.0.1/docs)
-
 
 ## Deployment :
 
