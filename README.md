@@ -19,7 +19,8 @@ Change inputs format in schemas.py (& outputs if needed)
 
 Change processing code if needed.
 
-Train & pickle (with joblib) a scikit model and store it in app/model folder.
+Train & pickle (with joblib) a scikit model and store it in app/model folder. 
+**Be sure to use latest scikit version during training.**
 
 Build & run docker image (see below)
 
