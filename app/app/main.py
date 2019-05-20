@@ -14,11 +14,12 @@ model = joblib.load("model/model.pkl")
 # Instantiate Preprocessor - MODIFY PROCESSOR CLASS (see processing.py) AND schemas of inputs/outputs (see schemas.py)
 processor = Processor()
 
+
 # POST endpoint
 @app.post("/predict-post/", response_model=ModelOutputsList)
-def post_predict(input_params: ModelInputs):
-    preds = processor.get_prediction(model, input_params)
-    return preds
+def post_predict(inputs: ModelInputs):
+    outputs = processor.get_prediction(model, inputs)
+    return outputs
 
 
 # Middleware to add time info

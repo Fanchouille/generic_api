@@ -12,7 +12,12 @@ class Processor:
         """
         # Just get list of feature as a numpy matrix
         # Add custom code to add preproc on data
-        return np.array([data.dict()[key] for key in data.fields.keys()]).T
+
+        # List of dict inputs
+        inputs = data.dict()["inputs"]
+
+        # Build array of features
+        return np.array([[record[key] for key in record.keys()] for record in inputs])
 
     def get_prediction(self, model, data):
         """
@@ -25,4 +30,4 @@ class Processor:
         y = model.predict(x).tolist()
         probs = model.predict_proba(x).tolist()
         # Be sure the output of get_prediction matches ModelOutputsList (see schemas.py)
-        return {'results': [{'prediction': int(pred), 'probabilities': probs[enum]} for enum, pred in enumerate(y)]}
+        return {'outputs': [{'prediction': int(pred), 'probabilities': probs[enum]} for enum, pred in enumerate(y)]}

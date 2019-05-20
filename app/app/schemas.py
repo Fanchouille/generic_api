@@ -3,11 +3,15 @@ from typing import List
 
 
 # Model inputs for post request
+class ModelUnitInput(BaseModel):
+    sepal_length: float
+    sepal_width: float
+    petal_length: float
+    petal_width: float
+
+# Model inputs for post request
 class ModelInputs(BaseModel):
-    sepal_length: List[float]
-    sepal_width: List[float]
-    petal_length: List[float]
-    petal_width: List[float]
+    inputs: List[ModelUnitInput]
 
 
 # Model outputs
@@ -19,4 +23,4 @@ class ModelOutputs(BaseModel):
 
 # List of unitary result
 class ModelOutputsList(BaseModel):
-    results: List[ModelOutputs]
+    outputs: List[ModelOutputs]
