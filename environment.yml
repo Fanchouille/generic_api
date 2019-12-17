@@ -1,0 +1,24 @@
+name: tf1-reco-rbm-inference
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.7
+  - pip
+  - setuptools
+  - wheel
+  - tqdm
+  - twine
+  - autopep8
+  - retrying
+  - pandas==0.25.2
+  - scikit-learn
+  - joblib
+  - python-multipart
+  - pip:
+    - starlette==0.12.9
+    - fastapi
+    - apscheduler
+    - uvicorn
+    - gunicorn

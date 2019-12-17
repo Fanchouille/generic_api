@@ -1,0 +1,199 @@
+{
+  "build": "py_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python",
+    "six >=1.4.0"
+  ],
+  "extracted_package_dir": "/Users/fanch/anaconda3/pkgs/python-multipart-0.0.5-py_0",
+  "features": "",
+  "files": [
+    "lib/python3.7/site-packages/multipart/__init__.py",
+    "lib/python3.7/site-packages/multipart/_version.py",
+    "lib/python3.7/site-packages/multipart/decoders.py",
+    "lib/python3.7/site-packages/multipart/exceptions.py",
+    "lib/python3.7/site-packages/multipart/multipart.py",
+    "lib/python3.7/site-packages/multipart/tests/__init__.py",
+    "lib/python3.7/site-packages/multipart/tests/compat.py",
+    "lib/python3.7/site-packages/multipart/tests/test_multipart.py",
+    "lib/python3.7/site-packages/python_multipart-0.0.5-py2.7.egg-info/PKG-INFO",
+    "lib/python3.7/site-packages/python_multipart-0.0.5-py2.7.egg-info/SOURCES.txt",
+    "lib/python3.7/site-packages/python_multipart-0.0.5-py2.7.egg-info/dependency_links.txt",
+    "lib/python3.7/site-packages/python_multipart-0.0.5-py2.7.egg-info/installed-files.txt",
+    "lib/python3.7/site-packages/python_multipart-0.0.5-py2.7.egg-info/not-zip-safe",
+    "lib/python3.7/site-packages/python_multipart-0.0.5-py2.7.egg-info/requires.txt",
+    "lib/python3.7/site-packages/python_multipart-0.0.5-py2.7.egg-info/top_level.txt",
+    "lib/python3.7/site-packages/multipart/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/multipart/__pycache__/_version.cpython-37.pyc",
+    "lib/python3.7/site-packages/multipart/__pycache__/decoders.cpython-37.pyc",
+    "lib/python3.7/site-packages/multipart/__pycache__/exceptions.cpython-37.pyc",
+    "lib/python3.7/site-packages/multipart/__pycache__/multipart.cpython-37.pyc",
+    "lib/python3.7/site-packages/multipart/tests/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/multipart/tests/__pycache__/compat.cpython-37.pyc",
+    "lib/python3.7/site-packages/multipart/tests/__pycache__/test_multipart.cpython-37.pyc"
+  ],
+  "fn": "python-multipart-0.0.5-py_0.tar.bz2",
+  "license": "Apache-2.0",
+  "license_family": "Apache",
+  "link": {
+    "source": "/Users/fanch/anaconda3/pkgs/python-multipart-0.0.5-py_0",
+    "type": 1
+  },
+  "md5": "a422cf8aedde18e7037cad6496adcd4b",
+  "name": "python-multipart",
+  "noarch": "python",
+  "package_tarball_full_path": "/Users/fanch/anaconda3/pkgs/python-multipart-0.0.5-py_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/multipart/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "7ab7fd3a167de90b4faa2896801e3511f9098cc2e9734f1b859e4d51626512ae",
+        "sha256_in_prefix": "7ab7fd3a167de90b4faa2896801e3511f9098cc2e9734f1b859e4d51626512ae",
+        "size_in_bytes": 470
+      },
+      {
+        "_path": "site-packages/multipart/_version.py",
+        "path_type": "hardlink",
+        "sha256": "781e6d120fc13471ec26041ec609a9649af873655b7e8a1064c5c05ae0c7a088",
+        "sha256_in_prefix": "781e6d120fc13471ec26041ec609a9649af873655b7e8a1064c5c05ae0c7a088",
+        "size_in_bytes": 22
+      },
+      {
+        "_path": "site-packages/multipart/decoders.py",
+        "path_type": "hardlink",
+        "sha256": "8f72ee4760f5de6cf6b015768297dfdb60bbb7e732ca8ff7c5cc1258ee4d57c6",
+        "sha256_in_prefix": "8f72ee4760f5de6cf6b015768297dfdb60bbb7e732ca8ff7c5cc1258ee4d57c6",
+        "size_in_bytes": 6141
+      },
+      {
+        "_path": "site-packages/multipart/exceptions.py",
+        "path_type": "hardlink",
+        "sha256": "2650d12a57526faf34fcf2df721cc89a0186acd56b37f19478bbd7fdf7fd5a80",
+        "sha256_in_prefix": "2650d12a57526faf34fcf2df721cc89a0186acd56b37f19478bbd7fdf7fd5a80",
+        "size_in_bytes": 1720
+      },
+      {
+        "_path": "site-packages/multipart/multipart.py",
+        "path_type": "hardlink",
+        "sha256": "53006963c86c5fa73f3156d843b566c38fe09e0a3813e54a133c178b2ff08749",
+        "sha256_in_prefix": "53006963c86c5fa73f3156d843b566c38fe09e0a3813e54a133c178b2ff08749",
+        "size_in_bytes": 71891
+      },
+      {
+        "_path": "site-packages/multipart/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/multipart/tests/compat.py",
+        "path_type": "hardlink",
+        "sha256": "cec2740dad78c0963621ef38141c4bd010ad0579e34c9d2175ec67dd79e99b0b",
+        "sha256_in_prefix": "cec2740dad78c0963621ef38141c4bd010ad0579e34c9d2175ec67dd79e99b0b",
+        "size_in_bytes": 4357
+      },
+      {
+        "_path": "site-packages/multipart/tests/test_multipart.py",
+        "path_type": "hardlink",
+        "sha256": "0cf6fc15b28673e94e396aada50b63097a8aa5f688561cb8c1b26cdcbe9232a7",
+        "sha256_in_prefix": "0cf6fc15b28673e94e396aada50b63097a8aa5f688561cb8c1b26cdcbe9232a7",
+        "size_in_bytes": 38675
+      },
+      {
+        "_path": "site-packages/python_multipart-0.0.5-py2.7.egg-info/PKG-INFO",
+        "path_type": "hardlink",
+        "sha256": "51d4be2cab6b882e98611fe156223225452d8eb4c919cf2553e5de728a6424e5",
+        "sha256_in_prefix": "51d4be2cab6b882e98611fe156223225452d8eb4c919cf2553e5de728a6424e5",
+        "size_in_bytes": 823
+      },
+      {
+        "_path": "site-packages/python_multipart-0.0.5-py2.7.egg-info/SOURCES.txt",
+        "path_type": "hardlink",
+        "sha256": "68824aee4788d2cf1ece91020d89718768ecb49502096f7c6022b605fab2768a",
+        "sha256_in_prefix": "68824aee4788d2cf1ece91020d89718768ecb49502096f7c6022b605fab2768a",
+        "size_in_bytes": 2909
+      },
+      {
+        "_path": "site-packages/python_multipart-0.0.5-py2.7.egg-info/dependency_links.txt",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "site-packages/python_multipart-0.0.5-py2.7.egg-info/installed-files.txt",
+        "path_type": "hardlink",
+        "sha256": "5022a9631d678816ac066be0db7d0e00b23a62204d46bfc0b36a553cf9764dcd",
+        "sha256_in_prefix": "5022a9631d678816ac066be0db7d0e00b23a62204d46bfc0b36a553cf9764dcd",
+        "size_in_bytes": 540
+      },
+      {
+        "_path": "site-packages/python_multipart-0.0.5-py2.7.egg-info/not-zip-safe",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "site-packages/python_multipart-0.0.5-py2.7.egg-info/requires.txt",
+        "path_type": "hardlink",
+        "sha256": "42b0695c089b57eeebbceb7a8dc125997b72765bfc378493399432feddd02d31",
+        "sha256_in_prefix": "42b0695c089b57eeebbceb7a8dc125997b72765bfc378493399432feddd02d31",
+        "size_in_bytes": 11
+      },
+      {
+        "_path": "site-packages/python_multipart-0.0.5-py2.7.egg-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "f7f6f3f0b1937a268e3a6b27ea271d3156720be7ecab3e3c349c4bb7ddd106da",
+        "sha256_in_prefix": "f7f6f3f0b1937a268e3a6b27ea271d3156720be7ecab3e3c349c4bb7ddd106da",
+        "size_in_bytes": 10
+      },
+      {
+        "_path": "lib/python3.7/site-packages/multipart/__pycache__/__init__.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/multipart/__pycache__/_version.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/multipart/__pycache__/decoders.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/multipart/__pycache__/exceptions.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/multipart/__pycache__/multipart.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/multipart/tests/__pycache__/__init__.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/multipart/tests/__pycache__/compat.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/multipart/tests/__pycache__/test_multipart.cpython-37.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "python-multipart",
+  "sha256": "47a277cda91c73b49fb20675f41d65cf57961ca4d2aa6c39d3d65ae06064fa14",
+  "size": 28683,
+  "subdir": "noarch",
+  "timestamp": 1539767515750,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/python-multipart-0.0.5-py_0.tar.bz2",
+  "version": "0.0.5"
+}

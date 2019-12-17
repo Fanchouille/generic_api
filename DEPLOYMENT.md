@@ -31,9 +31,9 @@ This tutorial is for simple deployment on Azure.
 
 1. Connect to [Azure](portal.azure.com)
 2. Search for *Web app for containers*
-3. Choose app name
+3. Choose app name : YOUR_APP_NAME
 
-    you will access your api at https://YOUR_API_NAME.azurewebsites.net
+    you will access your api at https://YOUR_APP_NAME.azurewebsites.net
 
     Choose relevant subscription & resource group
 
@@ -47,4 +47,4 @@ This tutorial is for simple deployment on Azure.
 
     Wait for 5 minutes.
     
-    Your API is up and documentation is available at [https://YOUR_API_NAME.azurewebsites.net/docs](https://YOUR_API_NAME.azurewebsites.net/docs)
+    Your API is up and documentation is available at [https://YOUR_APP_NAME.azurewebsites.net/docs](https://YOUR_APP_NAME.azurewebsites.net/docs)

@@ -2,6 +2,26 @@
 This a dockerized API to expose a scikit model with fastAPI (dummy model with Iris dataset).
 Based on [this docker image](https://github.com/tiangolo/uvicorn-gunicorn-docker)
 
+## Development
+### Anaconda local environment support
+
+Install Anaconda local environment as below:
+```bash
+./install.sh
+```
+
+Activate Anaconda local environment as below:
+
+```bash
+conda activate ${PWD}/.conda
+```
+
+Create requirements for later use in Dockerfile:
+
+```bash
+pip freeze > requirements.txt
+```
+
 ## Structure 
 #### *API endpoints*
 >/app/app/main.py 
