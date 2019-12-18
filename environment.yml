@@ -1,4 +1,4 @@
-name: tf1-reco-rbm-inference
+name: generic_api
 
 channels:
   - conda-forge
