@@ -1,7 +1,10 @@
-FROM tiangolo/uvicorn-gunicorn:python3.7
-LABEL maintainer="Fanch <francois.valadier@openvalue.fr>"
+FROM continuumio/miniconda3
+LABEL maintainer="François Valadier <francois.valadier@openvalue.fr>"
+WORKDIR /src
+COPY . .
+RUN conda env create -f environment.yml -p .conda \
+&& conda clean --all -f -y
 
-COPY requirements.txt /tmp/
-RUN pip install --requirement /tmp/requirements.txt
+EXPOSE 80
 
-COPY ./app /app
+ENTRYPOINT ["./entrypoint.sh"]

@@ -4,7 +4,7 @@ channels:
   - conda-forge
 
 dependencies:
-  - python=3.7
+  - python=3.8
   - pip
   - setuptools
   - wheel
@@ -12,13 +12,12 @@ dependencies:
   - twine
   - autopep8
   - retrying
-  - pandas==0.25.2
+  - pandas
   - scikit-learn
   - joblib
   - python-multipart
-  - pip:
-    - starlette==0.12.9
-    - fastapi
-    - apscheduler
-    - uvicorn
-    - gunicorn
+  - pyyaml
+  - fastapi
+  - uvicorn
+  - uvloop
+  - gunicorn

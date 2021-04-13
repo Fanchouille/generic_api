@@ -4,4 +4,3 @@
 ~/*.py[co]
 *.py[co]
 /.conda
-/models

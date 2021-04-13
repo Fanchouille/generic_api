@@ -9,6 +9,7 @@ class ModelUnitInput(BaseModel):
     petal_length: float
     petal_width: float
 
+
 # Model inputs for post request
 class ModelInputs(BaseModel):
     inputs: List[ModelUnitInput]
